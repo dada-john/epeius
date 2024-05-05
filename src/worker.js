@@ -1,6 +1,6 @@
 // src/worker.js
 import { connect } from "cloudflare:sockets";
-let sha224Password = '08f32643dbdacf81d0d511f1ee24b06de759e90f8edf742bbdc57d88';
+let sha224Password = 'b6e9bd098d0238477f1c83ab093bbb098fe3da89ccf03be77bfc640b';
 let proxyIP = "";
 
 const worker_default = {
@@ -19,7 +19,7 @@ const worker_default = {
                 switch (url.pathname) {
                     case "/link":
                         const host = request.headers.get('Host');
-                        return new Response(`trojan://ca110us@${host}:443/?type=ws&host=${host}&security=tls`, {
+                        return new Response(`trojan://fuckGFW777@${host}:443/?type=ws&host=${host}&security=tls`, {
                             status: 200,
                             headers: {
                                 "Content-Type": "text/plain;charset=utf-8",
